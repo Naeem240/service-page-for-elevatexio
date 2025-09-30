@@ -6,13 +6,21 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.section-divider {
+  border: 0;
+  height: 2px;
+  width: 80%;
+  margin: 2.5rem auto;
+  background: linear-gradient(to right, transparent, rgba(0,0,0,0.2), transparent);
+}
+
 body {
-  background: linear-gradient(135deg, #f0f4ff, #e6f7ff); /* soft blue gradient */
+  background: linear-gradient(135deg, #0021f5, #fdfdfd);
   color: #222;
   text-align: center;
   min-height: 100vh;
-  margin: 0px 4px
 }
+
 
 
 /* Container */
@@ -25,15 +33,16 @@ body {
 
 /* Header */
 header {
-  background: #f8f9fa;
-  padding: 3rem 0;
+  /* background: linear-gradient(135deg, #1e01fc, #020928); */
+  padding: 0rem 0;
+  color: white !important;
 }
 header h1 {
   font-size: 2.5rem;
-  color: #222;
+  /* color: #222; */
 }
 header p {
-  color: #555;
+  /* color: #555; */
   margin-top: 0.5rem;
 }
 
@@ -52,7 +61,7 @@ header p {
   box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
   overflow: hidden; /* keeps the effect inside the card */
   transition: transform 0.8s ease;
-  z-index: 1;
+  z-index: 1;  
 }
 
 .service-card::before {
@@ -101,11 +110,14 @@ header p {
 
 /* CTA */
 .cta {
-  background: #007bff;
-  color: #fff;
-  padding: 2.5rem 1rem;
+  /* background: #007bff; */
+  /* color: #fff; */
+  padding: 1rem;
   border-radius: 8px;
-  margin: 3rem auto;  
+  margin: 3rem auto 0px auto;  
+  /* border: 1px solid #fff; */
+  width: fit-content;
+  box-shadow: 1px 1px 8px ;
 }
 .cta h2 {
   font-size: 2rem;
@@ -117,10 +129,10 @@ header p {
 .cta button {
   position: relative;
   background: #fff;
-  color: #007bff;
   border: none;
-  padding: 0.8rem 1.5rem;
-  border-radius: 5px;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border-radius: 100%;
   font-size: 1rem;
   cursor: pointer;
   overflow: hidden;
@@ -133,7 +145,7 @@ header p {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background: linear-gradient(135deg, #43cea2, #185a9d); /* gradient hover color */
+  background: linear-gradient(135deg, #021630, #185a9d); /* gradient hover color */
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.9s ease-in-out;
